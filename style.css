@@ -1,0 +1,49 @@
+*{
+    box-sizing:border-box;
+}
+
+body{
+    background-color: rgb(116, 116, 117);
+    color:#000;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    height:100vh;
+    margin: 0;
+    overflow: hidden;
+    text-align: center;
+}
+
+.container{
+    display: flex;
+}
+
+.waktu{
+    display: flex;
+    font-size:1.2rem;
+    flex-direction: column;
+    margin: 0 15px;
+}
+
+.waktu h1{
+    margin-bottom: 0;
+}
+
+.waktu small{
+    color: #fdd7d7;
+}
+
+.fa-heart{
+    color:#f71717;
+    position:absolute;
+    top:-20px;
+    animation: jatuh linear forwards;
+}
+
+@keyframes jatuh{
+    to{
+        transform: translateY(105vh);
+    }
+}
